@@ -9,12 +9,11 @@ Let the latest and greatest video compression algorithms save your hard disk spa
 
 ### Installation:
 
-Install 'ffmpeg' on your terminal
+Install `ffmpeg` on your terminal
 
-on OS X: '''brew install ffmpeg'''
+on OS X: `brew install ffmpeg`
 
 
 ### Usage:
-
-'''python3 convert video.py /directory/where/videos/are/stored/'''
+`python3 convert video.py /directory/where/videos/are/stored/`
 

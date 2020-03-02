@@ -26,6 +26,7 @@ count_processed = 0
 # first count files to get an idea of progress:
 for root, d_names, f_names in os.walk(path):
     for f in f_names:
+        # modify this list of extenstions to process the files you are interested in:
         if f.endswith(".mov") or f.endswith(".MOV") or f.endswith(".avi") or f.endswith(".AVI"):
             count_files += 1
 
@@ -34,6 +35,7 @@ print('Number of files to be processed:', count_files)
 # now process:
 for root, d_names, f_names in os.walk(path):
     for f in f_names:
+        # modify this list of extenstions to process the files you are interested in:
         if f.endswith(".mov") or f.endswith(".MOV") or f.endswith(".avi") or f.endswith(".AVI"):
             count_processed += 1
             fpre, fext = os.path.splitext(f)

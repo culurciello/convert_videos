@@ -17,3 +17,6 @@ on OS X: `brew install ffmpeg`
 ### Usage:
 `python3 convert video.py /directory/where/videos/are/stored/`
 
+Attention: will recursevely process all files and directory inside the input directory. Will delete original files!
+
+### NOTICE: Always backup all your files before using this script. Use at own risk. We are not responsible for loss of files or value.

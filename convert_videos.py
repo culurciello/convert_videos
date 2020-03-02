@@ -44,7 +44,7 @@ for root, d_names, f_names in os.walk(path):
             conv_file = os.path.join(root, fpre) + ".mp4"
             # conv_file = os.path.join(root, fpre) + "_ec.mp4"
             # cmd = "ls -aGlSr '" + os.path.join(root, f) + "'"
-            cmd = "ffmpeg -i '" + orig_file + "' '" + conv_file + "'"
+            cmd = "ffmpeg -hide_banner -loglevel panic -i '" + orig_file + "' '" + conv_file + "'"
             # print(cmd)
             # input()
             # convert file:

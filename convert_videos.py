@@ -1,8 +1,10 @@
 # E. Culurciello
 # March 2020
 
-# find all moview files and convert them to mp4 with ffmpeg
+# find all video files and convert them to mp4 with ffmpeg
 # this will compress all files with the latest algorithms
+
+# usage: python3 convert_videos /path/to/video/files/
 
 import os, sys
 
@@ -53,7 +55,7 @@ for root, d_names, f_names in os.walk(path):
             if not returned_value:
                 os.remove(orig_file) # delete original movie file
                 print('Conversion successful; Removed file:', orig_file)
-            orig_size_video_files += os.path.getsize(conv_file)
+            conv_size_video_files += os.path.getsize(conv_file)
             original_files.append(orig_file)
             converted_files.append(conv_file)
             print('Processed file number', count_processed, 'out of:', count_files)
